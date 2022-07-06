@@ -15,7 +15,6 @@ const App = () => {
 
   React.useEffect(() => {
     const timer = setTimeout(() => {
-      console.log("This will run after 1 second!");
       setLoading(false);
     }, 3000);
 
@@ -30,9 +29,13 @@ const App = () => {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        backgroundColor: "white",
       }}
     >
-      <h2>Loading...</h2>
+      <img
+        src={require("../../static/assets/images/loader.gif")}
+        alt="Loader"
+      />
     </div>
   );
 
