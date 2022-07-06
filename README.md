@@ -1,7 +1,7 @@
-# Build out Instagram Style Video Stories in React
+# Build an HTML Parser in React
 
 ## Objectives:
 
-- Utilize video files in a React application
-- Integrate the React Stories NPM library
-- Configure advanced controls and options for the React Stories library
+- Build a React JS component that renders HTML content
+- Implement functions that parse HTML attributes
+- Create a process for swapping out specific HTML attributes for React components

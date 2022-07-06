@@ -50,6 +50,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: var(--highlight);
 
   .logo {
     width: 300px;
@@ -186,25 +187,44 @@ button {
   }
 }
 
-.story-controls {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 15px 0px;
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
 
-  img {
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    object-fit: cover;
-    border: 3px solid white;
-    transition: 0.5s ease;
-    margin: 0px 10px;
-    padding: 3px;
+.html-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .content-title {
+    font-size: 2.5rem;
+    color: var(--primary);
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 21px 0px;
+  }
+
+  .image {
+    border-radius: 300px;
+    border: 5px solid var(--primary);
+  }
+
+  a {
+    margin: 15px 0px;
+    width: fit-content;
+    border-radius: 3px;
+    background-color: var(--bg-highlight);
+    color: white;
+    padding: 8px 15px;
+    transition: 0.5s ease-in-out;
 
     &:hover {
-      border: 3px solid var(--primary) !important;
+      background-color: var(--primary);
+      color: var(--off-white);
+      transform: scale(1.05);
     }
   }
 }
