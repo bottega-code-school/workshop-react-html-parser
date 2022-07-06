@@ -227,4 +227,17 @@ button {
       transform: scale(1.05);
     }
   }
+
+  .external-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 5px;
+    }
+  }
 }
