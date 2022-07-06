@@ -6,15 +6,8 @@ type Props = {
   setContent: (content: string) => void;
 };
 export default function CodeEditor({ content, setContent }: Props) {
-  const ref = React.useRef(null);
-
   function handleEditorChange(editorValue: string, _event: any) {
-    // console.log("here is the current model value:", editorValue);
-    try {
-      setContent(editorValue);
-    } catch (error) {
-      console.error("Error:", error);
-    }
+    setContent(editorValue);
   }
 
   return (
