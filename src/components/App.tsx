@@ -11,7 +11,7 @@ const routes = [
 ];
 
 const App = () => {
-  const [loading, setLoading] = React.useState(true);
+  const [loading, setLoading] = React.useState(false);
 
   React.useEffect(() => {
     const timer = setTimeout(() => {
